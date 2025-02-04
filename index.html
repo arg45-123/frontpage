@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinking Water Survey Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient( rgb(25, 25, 95), rgb(3, 3, 34));
+            color: white;
+        }
+        header {
+            background: #005a8d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+        }
+                /* Navigation Bar */
+                nav {
+                    background: rgb(9, 9, 45);
+            text-align: center;
+            padding: 10px;
+            width: 91.5%;
+            margin: 20px auto;
+            border-radius: 5px;
+            margin-top: 0%;
+        
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+            
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: background 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            background-color: #003f7f;
+            border-radius: 5px;
+        }
+
+
+
+        /* Main Container */
+        .intro {
+            width: 80%;
+            margin: 20px auto;
+             background: rgb(4, 5, 54);
+            padding: 40px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .container1 {
+            width: 90%;
+            margin: 30px auto;
+            padding: 20px;
+            background: rgb(4, 5, 54);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; 
+            margin-bottom: 0%;
+           
+        }
+        /* Sections */
+        h2 {
+            color: #005a8d;
+            border-bottom: 2px solid #005a8d;
+            padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #005a8d;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        h1 {
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 22px;
+            margin-top: 5px;
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .members {
+            width: 90%;
+            margin: 30px auto;
+            padding: 60px;
+            background: rgb(4, 5, 54);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 20px auto;
+            background: rgb(9, 9, 45);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+        h1 {
+            color: #ebe6e6;
+        }
+        .department-btn {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 15px;
+            
+            color: white;
+            border: none;
+            border-radius: 5px solid white;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            background: #1b1b2f;
+            border-radius: 12px;
+
+            
+        }
+        .overall
+        {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 30px;
+            
+            color: white;
+            border: none;
+            border-radius: 5px solid white;
+            font-size: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            background: #41075a;
+            border-radius: 12px;
+
+
+
+        }
+
+        .overall:hover{
+            background: rgb(91, 9, 9);
+        }
+        .department-btn:hover {
+            background: rgb(91, 9, 9);
+        }
+        .www
+        
+        {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+        }
+        .wwf 
+        {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 35px;
+        }
+        .logo{
+            background-color: ;
+            
+        }
+        .wheat{
+            color: wheat;
+        }
+        .navbtn{
+            padding: 10px;
+            background-color: #1b1b2f;
+            color: #ebe6e6;
+            font-weight: bold;
+        }
+                /* Content Section */
+                .content {
+            max-width: 1350px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgb(9, 9, 45);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #0073e6;
+            border-bottom: 3px solid #0073e6;
+            padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #0f355c;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .conclude{
+            align-items: flex-start;
+        }
+        .highlight{
+            color: wheat;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <p class="www">Drinking Water Survey Report</p>
+    <p class="wwf">Qualitative and Quantitative Analysis of Drinking Water at PRMIT&R</p>
+    <div class=""></div> -->
+    <div class="container1">
+        <!-- <img src="8ef189c35e-prmitr-amravati.jpg" alt="College Logo" class="logo"> -->
+        <h1>Prof. Ram Meghe Institute of Technology and Research</h1>
+        <!-- <h2>Drinking Water Survey Report</h2> -->
+        <h2 class="wheat"><strong>Title: </strong> Comprehensive Webpage on Qualitative and Quantitative Analysis of Drinking Water at PRMIT&R</h2>
+        <!-- <p class="info"><b>Academic Year:</b> 2024-25 | <b>Semester:</b> [Mention Semester]</p> -->
+        
+       
+        
+
+
+        <!-- <div class="guide">
+            <p><b>Guided by:</b></p>
+            <p>Dr. M.V. Gudadhe</p>
+        </div> -->
+
+        <!-- <div class="footer">
+            <p>Submitted to the Department of Mechanical Engineering</p>
+            <p>Prof. Ram Meghe Institute of Technology and Research</p>
+        </div> -->
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li></button> 
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#findings">Findings</a></li>
+            <li><a href="#conclusion">Conclusion & Future Scopes</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="content">
+        <h2>Welcome to the Drinking Water Survey</h2>
+        <p>Water is essential for life, and ensuring its quality is a fundamental responsibility. This survey was conducted to assess the drinking water quality and infrastructure at PRMIT&R, providing insights into both quantitative and qualitative aspects.</p>
+    </section>
+
+    <section id="introduction" class="content">
+        <h2>Introduction</h2>
+        <p>We are a group of 4 students - <b>Arpan, Aditya, Pranav, and Yash</b> - conducting a survey under the Project. Our primary objective was to analyze the drinking water facilities available in our college, focusing on both qualitative and quantitative aspects.</p>
+        <p>Our survey included visiting multiple departments, collecting data on water sources, and identifying any issues with water coolers, storage tanks, and water quality. We aimed to assess whether the available drinking water is sufficient, clean, and properly maintained.</p>
+        <p>This project was carried out under the guidance of <b> faculties.</b>, ensuring the authenticity and reliability of the collected data.</p>
+    </section>
+
+    <section id="methodology" class="content">
+        <h2>Methodology</h2>
+        <p>To ensure accurate results, we divided our methodology into two major sections: <b>Quantitative Analysis</b> and <b>Qualitative Analysis</b>.</p>
+        <p>Qualitative Analysis includes various water tests such pH, TDS, chlorides etc and Quantitative Analysis include parameters such as water sources, water coolers,tanks , refiiling frequency etc.</p>
+    </section>
+    <section id="findings" class="content">
+        <h2>Key Findings</h2>
+        <p>Our survey revealed the following observations:</p>
+        <!-- <ul>
+            <li>The college has <b>3 borewells</b> for drinking purposes.</li>
+            <li>Some water coolers were found to be <b>non-functional</b> and required maintenance.</li>
+            <li>The pH level of the drinking water was found to be within acceptable limits.</li>
+            <li>Water hardness was within safe drinking parameters.</li>
+            <li>Maintenance schedules for tanks and coolers need to be improved for better hygiene.</li>
+        </ul> -->
+    </section>
+   
+
+
+    <div class="container">
+        <h1>Drinking Water Survey Report</h1>
+        <a href="https://arg45-123.github.io/Drinking-water-survey-report/#mechanical" class="overall"> Overall Campus</a>
+        <br>
+        
+        <p>Select your department to view the relevant findings:</p>
+
+        <a href="https://arg45-123.github.io/comp.sci-survey-data/" class="department-btn">Computer Science Department</a>
+        <a href="https://arg45-123.github.io/Drinking-water-survey-report/#mechanical" class="department-btn"> Mechanical Department</a>
+        <a href="https://arg45-123.github.io/IT-dept-survey-report/"class="department-btn">Information Technology Department</a>
+        <a href="https://arg45-123.github.io/civil-dept-survey-report/" class="department-btn">Civil Department</a>
+        <a href="https://arg45-123.github.io/extc-survey-report/" class="department-btn">Electronics and Telecommunication Department</a>
+        <a href="https://arg45-123.github.io/Aids-IOT-survey-report-drinking-/" class="department-btn">IOT & AIDS</a>
+        <a href="https://arg45-123.github.io/canteen-and-workshup-survey/" class="department-btn">Workshop & Canteen</a>
+
+
+        <br>
+        <a href="https://arg45-123.github.io/Drinking-water-survey-report/#mechanical" class="overall"> Comparative Analysis (Between Departments)</a>
+
+    </div> 
+
+
+    <section id="conclusion" class="content">
+        <h2>Conclusion & Recommendations</h2>
+        <p>Based on our findings, we suggest the following improvements:</p>
+        <ul class="conclude">
+            <li>Regular water quality testing should be conducted to ensure safe drinking water.</li>
+            <li>Malfunctioning water coolers should be repaired or replaced.</li>
+            <li>Periodic cleaning of storage tanks should be strictly followed.</li>
+            <li>Students should be educated on water conservation and hygiene.</li>
+        </ul>
+        <p>Through this survey, we have gained valuable insights into the water infrastructure of our college and have provided actionable recommendations to enhance its quality.</p>
+    </section>
+
+    <section id="findings" class="content">
+        <h2>Future Scope</h2>
+        <p class="highlight"><b>1. Regular Monitoring and Trend Analysis </b>    </p>
+        <p>Conduct periodic water quality tests (monthly or quarterly) to observe variations in pH, TDS, hardness, and microbial contamination. Establish a trend analysis system to predict potential issues before they become critical.
+     </p>
+        <!-- <ul>
+            <li>The college has <b>3 borewells</b> for drinking purposes.</li>
+            <li>Some water coolers were found to be <b>non-functional</b> and required maintenance.</li>
+            <li>The pH level of the drinking water was found to be within acceptable limits.</li>
+            <li>Water hardness was within safe drinking parameters.</li>
+            <li>Maintenance schedules for tanks and coolers need to be improved for better hygiene.</li>
+        </ul> -->
+        <p class="highlight"><b>
+            2. Incorporating Advanced Testing Methods</b>
+            </p>
+            <p>Introduce real-time water quality monitoring sensors for continuous assessment. Expand the survey to include microbiological tests to detect harmful bacteria and pathogens.
+
+            </p>
+            <p class="highlight"><b>3. Evaluating the Impact of Seasonal Changes
+            </b></p>
+            <p>Conduct comparative studies of water quality in different seasons to assess fluctuations due to rainfall, temperature, and groundwater levels.Analyze how monsoons, summers, and winters affect the borewell water quality and overall supply system.
+            
+
+            </p>
+            <p class="highlight"><b>4. Integration with Digital Platforms
+            </b></p>
+
+            <p>Develop an online dashboard or mobile app where students and faculty can report water quality concerns.Use data visualization techniques to present real-time water quality statistics for better decision-making.
+
+
+
+            </p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Drinking Water Survey | Designed by PRMIT&R Students</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+<!-- 
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparative Analysis - Drinking Water Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        select {
+            padding: 8px;
+            font-size: 16px;
+            margin: 5px;
+        }
+        #comparisonResult {
+            margin-top: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Drinking Water Survey</h1>
+    <button onclick="window.location.href='#comparative-section'">Comparative Analysis</button>
+
+    <div id="comparative-section" style="margin-top: 50px;">
+        <h2>Comparative Analysis</h2>
+        <label for="dept1">Select First Department:</label>
+        <select id="dept1">
+            <option value="IT">IT</option>
+            <option value="Mech">Mechanical</option>
+            <option value="EXTC">EXTC</option>
+            <option value="Workshop">Workshop</option>
+        </select>
+
+        <label for="dept2">Select Second Department:</label>
+        <select id="dept2">
+            <option value="IT">IT</option>
+            <option value="Mech">Mechanical</option>
+            <option value="EXTC">EXTC</option>
+            <option value="Workshop">Workshop</option>
+        </select>
+
+        <button onclick="compareDepartments()">Compare</button>
+
+        <div id="comparisonResult"></div>
+    </div>
+
+    <script>
+        const waterData = {
+            IT: { pH: 7.32, hardness: 120, TDS: 300 },
+            Mech: { pH: 7.51, hardness: 135, TDS: 320 },
+            EXTC: { pH: 7.66, hardness: 140, TDS: 330 },
+            Workshop: { pH: "N/A", hardness: "N/A", TDS: "N/A" }
+        };
+
+        function compareDepartments() {
+            let dept1 = document.getElementById("dept1").value;
+            let dept2 = document.getElementById("dept2").value;
+
+            if (dept1 === dept2) {
+                alert("Please select two different departments.");
+                return;
+            }
+
+            let data1 = waterData[dept1];
+            let data2 = waterData[dept2];
+
+            let resultHTML = `
+                <h3>Comparison Between ${dept1} and ${dept2}</h3>
+                <table>
+                    <tr>
+                        <th>Parameter</th><th>${dept1}</th><th>${dept2}</th>
+                    </tr>
+                    <tr>
+                        <td>pH</td><td>${data1.pH}</td><td>${data2.pH}</td>
+                    </tr>
+                    <tr>
+                        <td>Hardness</td><td>${data1.hardness}</td><td>${data2.hardness}</td>
+                    </tr>
+                    <tr>
+                        <td>TDS</td><td>${data1.TDS}</td><td>${data2.TDS}</td>
+                    </tr>
+                </table>
+            `;
+
+            document.getElementById("comparisonResult").innerHTML = resultHTML;
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+   
+  
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html> -->
